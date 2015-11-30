@@ -3,12 +3,13 @@ System.config({
   transpiler: "babel",
   babelOptions: {
     "optional": [
-      "runtime"
+      "runtime",
+      "es7.decorators"
     ]
   },
   paths: {
-    "*": "dist/*.js",
-    "app/*": "app/*.js",
+    "*": "dist/*",
+    "app/*": "app/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },

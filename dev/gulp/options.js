@@ -27,7 +27,11 @@ module.exports = {
     moduleIds: false,
     comments: false,
     compact: true,
-    stage:2
+    stage:2,
+    optional: [
+      "runtime",
+      "es7.decorators"
+    ]
   },
   browserSync: {
     localUrl: process.env.GULP_SERVE_URL ? process.env.GULP_SERVE_URL : defaultGulpServerUrl
